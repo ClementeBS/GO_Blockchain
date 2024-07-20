@@ -43,6 +43,8 @@ if upload_certificate:
         energy=go_certificate["energy"],
         date=go_certificate["date"]
     )
+else:
+    print("Certificate was set to not be uploaded")
 
 # Read certificate
 certificate_data = go_engine.get_certificate(3)
